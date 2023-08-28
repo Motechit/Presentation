@@ -1,0 +1,557 @@
+*{
+    padding: 2px !important;
+    margin: 2px !important;
+    text-decoration: none !important;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background: plum;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Career.Wise{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 4%;
+    width: 20%;
+}
+
+.Career.Wise h1{
+    margin-left: 5%;
+}
+
+.navbar{
+    position: relative;
+    width: 70%;
+    padding: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchbox{
+    position: relative;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.searchbox input{
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    padding: 1px;
+    text-indent: 10px;
+    font-size: 18px;
+}
+
+#searchIcon{
+    position: relative;
+    left: -30px;
+    font-size: 25px;
+    color: purple;
+    cursor: pointer;
+    z-index: 221;
+}
+
+ul{
+    width: 60%;
+    text-align: center;
+}
+
+ul li{
+    display: inline-block;
+    margin-left: 4%;
+    transition: all 0.5s ease;
+    text-align: center;
+    cursor: pointer;
+    padding: 1%;
+    height: 20px;
+    overflow: hidden;
+}
+
+ul li:hover{
+    height: 45px;
+}
+
+ul li #headIcon{
+    display: block;
+    font-size: 22px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+ul li a:active,
+:focus {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+#menuIcon{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        position: relative;
+        display: block;
+        width: 60%;
+        display: none;
+    }
+
+    .navbar.navactive{
+        display: inline;
+    }
+
+
+    .searchbox{
+        position: relative;
+        width: 100%;
+        top: 60px;
+        z-index: 121;
+        left: 5%;
+    }
+
+    #menuIcon{
+        display: inline;
+        position: fixed;
+        font-size: 25px;
+        margin-left: 88%;
+        z-index: 100;
+        float: right;
+        padding: 1%;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 1px solid rgb(221, 221, 221);
+        color: #000;
+    }
+    .navbar ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: plum;
+    }
+
+    .navbar ul li{
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+        height: 40px;
+        text-align: left;
+        position: relative;
+        top: 50px;
+        padding: 2%;
+    }
+
+    ul li #headIcon{
+        display: inline-block;
+        font-size: 33px;
+        color: #000;
+    }
+
+    ul li:hover{
+        background: purple;
+    }
+
+    ul li a {
+        margin-left: 40px;
+        font-family: 600;
+    } 
+}
+
+/* Landing page css */
+
+.landing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw 0 10vw;
+    height: 70vh;
+}
+
+.landingtext h1{
+    font-size: 4vw;
+    margin: 0 !important;
+}
+
+.landingtext h3{
+    margin: 6px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #777777;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    padding-right: 20px;
+}
+
+.landingtext .btn{
+    width: 120px;
+    margin-top: 30px;
+    padding: 14px 20px 20px 20px;
+    background-color: purple;
+    border-radius: 45px;
+    text-align: center;
+}
+
+/* .landingtext img{
+    width: 28vw;
+} */
+
+
+/* Introduction css */
+
+.intro{
+    width: 100%;
+    height: 90vh;
+    background-image: url(/images/guidance-removebg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/*  */
+
+.patients{
+    width: 80vh;
+}
+
+ol{
+    list-style: none;
+    color: #007bff;
+}
+
+ol li{
+    /* font-size: 50px; */
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+li p{
+    font-size: 20px;
+    color: black;
+    padding-left: 60px;
+    line-height: 30px;
+    opacity: 0.8;
+}
+
+li span{
+    /* position: absolute; */
+    /* line-height: 25px; */
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* testimonies css */
+
+.testimonies{
+    height: 600px;
+}
+
+.testimonialheader{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.testimonialcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+.testimonialcard .testifier1{
+    position: relative;
+    background: #fff;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.9), 0 10px 10px rgba(0, 0, 0, 0.9);
+}
+
+.testimonialcard .testifier2{
+    position: relative;
+    background: #fff;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.9), 0 10px 10px rgba(0, 0, 0, 0.9);
+}
+
+.testimonialcard .testifier3{
+    position: relative;
+    background: #fff;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.9), 0 10px 10px rgba(0, 0, 0, 0.9);
+}
+
+.cardbgone{
+    width: 150px;
+    background-color: #fff;
+    padding-right: 10px;
+}
+
+.cardcontent{
+    padding: 0 20px;
+}
+
+.cardcontent p{
+    line-height: 30px;
+    opacity: 0.6;
+}
+
+.cardcontent .cardbtn{
+    width: 120px;
+    margin-top: 30px;
+    padding: 14px 20px 20px 20px;
+    background-color: purple;
+    border-radius: 45px;
+    text-align: center;
+
+}
+
+.cardcontent .cardbtn:hover{
+    background-color: #777777;
+}
+
+
+/* Banner & footer */
+
+.banner{
+    height: 300px;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: row;
+    padding: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bannertext{
+    font-size: 2vw;
+    color: #000;
+    font-weight: 600;
+}
+
+.bannerimg{
+    width: 10vw;
+    margin-right: 10px;
+}
+
+.bannerimg img{
+    width: 20vw;
+}
+
+/* footer css */
+.footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    background: plum;
+    color: white;
+}
+
+.footerlinks a{
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.footerlinks .mainlink{
+    color: purple;
+}
+
+.footerlinks a:hover{
+    color: white;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 786px) {
+    .landing{
+        flex-direction: column-reverse;
+        height: 750px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .landingtext h1{
+        font-size: 6vw;
+        margin: 0 !important;
+    }
+
+    .landingtext h3{
+        font-size: 16px;
+    }
+
+    .landingtext .btn{
+        font-size: 3vw;
+    }
+
+    .landingtext img{
+        width: 52vw;
+        margin-bottom: 20px;
+    }
+
+    .intro{
+
+        flex-direction: column-reverse;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        /* height: auto;
+        padding: 1px;
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    .testimonies{
+        height: auto;
+    }
+
+    .testimonialheader{
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .testimonialcard{
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .testimonialcard .testifier1{
+        margin-bottom: 60px;
+    }
+
+    /* Banner */
+    .banner{
+        height: auto;
+        flex-direction: column-reverse;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner h1{
+        font-size: 6vw;
+    }
+
+    .bannerinnertext{
+        font-size: 3vw !important;
+    }
+
+    .bannerimg img{
+        width: 20vw;
+    }
+
+    /* Footer */
+    .footer{
+        padding-bottom: 40px;
+    }
+
+
+}
+
+/* About page CSS */
+.counsellorimage{
+    display: flex;
+}
+
+
+.service-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    width: 70%;
+  }
+
+  .service h1{
+    font-size: 30px;
+    color: purple;
+  }
+
+  .service li{
+    font-weight: bolder;
+  }
+
+  .service button{
+    width: 200px;
+    border-radius: 10px;
+    padding: 2px;
+    align-items: center;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+  }
+
+
+  /* Blog css */
+
+
+  .blog-item4{
+    width: 100%;
+    border-radius: 10px;
+    padding: 2px;
+    height: 390px;
+    border: 1px solid #ccc;
+  }
+
+  .blog-item1{
+    width: 100%;
+    border-radius: 10px;
+    padding: 2px;
+    height: 420px;
+    border: 1px solid #ccc;
+    
+  }
+
+
+  .blog-item2{
+    width: 100%;
+    border-radius: 10px;
+    padding: 2px;
+    height: 470px;
+    border: 1px solid #ccc;
+  }
+
+  .blog-item3{
+    width: 100%;
+    border-radius: 10px;
+    padding: 2px;
+    height: 420px;
+    border: 1px solid #ccc;
+  }
